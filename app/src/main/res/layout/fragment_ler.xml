@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/prLer"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.LerFragment">
+
+    <TextView
+        android:id="@+id/tvResultadoNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        app:layout_constraintLeft_toLeftOf="@+id/prLer"
+        app:layout_constraintRight_toRightOf="@+id/prLer"
+        app:layout_constraintTop_toTopOf="@+id/prLer"
+        app:layout_constraintBottom_toBottomOf="@+id/prLer"
+        android:textSize="16sp"/>
+    <EditText
+        android:id="@+id/etPesquisa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultadoNome"
+        app:layout_constraintLeft_toLeftOf="@+id/prLer"
+        app:layout_constraintRight_toRightOf="@+id/prLer"
+        android:layout_marginTop="32dp"
+        android:ems="15"
+        android:hint="Pesquisa"/>
+    <Button
+        android:id="@+id/btBusca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        app:layout_constraintTop_toBottomOf="@+id/etPesquisa"
+        app:layout_constraintLeft_toLeftOf="@+id/prLer"
+        app:layout_constraintRight_toRightOf="@id/prLer"
+        android:layout_marginTop="16dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
